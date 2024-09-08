@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static and interactive resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1>Static and Interactive Resume Builder By Fatima</h1>
+     <!-- Form to input resume details -->
+     <form id="resumeForm">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="profile picture">DISPLAY PICTURE:  <img src="C:\Users\DELL\Desktop\milestone1/img.jpg" width="100" height="100" alt="profile pic"> </img></label>
+        <label for="name">Name:    </label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">EMAIL: </label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">PHONE: </label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Education: </legend>
+            <label for = "education"> EDUCATION</label>
+            <textarea id = "education" name="education" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Experience: </legend>
+        <label for = "experience">EXPERIENCE </label>
+        <textarea id = "experience" name="experience" rows="4" required></textarea> <br>
+    </fieldset>
+
+
+<fieldset>
+    <legend>Skills</legend>
+    <label for = "skills"> SKILLS: </label>
+    <textarea id = "skills" name="skills" rows="4" required></textarea> <br>
+</fieldset>
+
+  <!-- Button to toggle Skills section -->
+  <button id="toggleSkillsBtn">Toggle Skills</button>
+
+  <!-- Skills section -->
+  <section id="skillsSection" style="display: none;">
+      <h2>Skills</h2>
+      <ul>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          
+      </ul>
+  </section>
+
+  <script src="index.js"></script>
+
+<button type="submit"> GENERATE RESUME NOW!!</button>
+
+    </form>
+
+
+</body>
+</html>
